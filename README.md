@@ -99,3 +99,11 @@ Here you can see the invalid ELF header error. While I debugged several other is
 ## Conclusion
 
 Solana is a fast and low-cost blockchain platform, making it ideal for IoT applications. The architecture presented in this project demonstrates how we can aggregate data across multiple sensor nodes and publish it to Solana as a data feed, in a distributed manner.
+
+## Warnings
+- For a proof of concept, several keys and secrets have been published in the code. If you're a hacker, don't bother because they don't have balances or have rate limits.
+- The CoAP server is not necessary for this project, and it is included for reference only. It adds unnecessary complexity to the sensor node code.
+- The `solder` library in the Solana Python SDK is not compatible with the Lambda environment and needs additional configuration or a Lambda Layer setup to work.
+- The sensor node code is a simulation and uses random data. In a real-world scenario, the sensor node would collect data from actual sensors. This is simple, by just replacing the random data generation with actual sensor data collection.
+- The Solana smart contract is a simple data feed for proof of concept. In a real-world scenario, the smart contract would have more functionality such as a better data structure and historical data storage.
+- No optimizations or error handling is implemented in the code.
