@@ -1,3 +1,6 @@
 package/
 contracts/
 release/
+env/
+debug/
+test/
