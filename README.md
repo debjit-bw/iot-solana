@@ -49,11 +49,11 @@ mqtt_connection.publish(
 
 ![Thing](images/thing.png)
 
-<center>Thing created in AWS IoT Core</center>
+<p style="text-align: center;">Thing created in AWS IoT Core</p>
 
 ![AWS IoT Policy](images/policy.png)
 
-<center>AWS IoT Policy</center>
+<p style="text-align: center;">AWS IoT Policy</p>
 
 3. The AWS IoT Core rule engine triggers the Lambda function when it receives data on the `weather/data` topic.
 
@@ -80,11 +80,11 @@ docker run iot-device
 ```
 ![Sensor Node Publishing data](images/messeges-published.png)
 
-<center>Messages published by the sensor node</center>
+<p style="text-align: center;">Messages published by the sensor node</p>
 
 ![Received Messages](images/messages-received.png)
 
-<center>Messages received</center>
+<p style="text-align: center;">Messages received</p>
 
 ## Minor Hiccup
 
@@ -92,7 +92,7 @@ Since I haven't triggered Solana contract calls from Python before, there were i
 
 ![Error](images/lambda-ss.png)
 
-<center>Lambda error logs</center>
+<p style="text-align: center;">Lambda error logs</p>
 
 Here you can see the invalid ELF header error. While I debugged several other issues throughout the project, this was the final one that I couldn't resolve due to time issues as I was asked to submit the project within a day.
 
